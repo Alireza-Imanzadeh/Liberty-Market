@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/normalize.css">
+    <link rel="stylesheet" href="asset/master.css">
+    <link rel="stylesheet" href="asset/local.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <!-- start header -->
+        <header class="head_top container-fluid px-0 px-md-5 d-flex justify-content-center ">
+            <section class="container-fluid container-xxl h-100 ">
+                <!-- start menu white -->
+                <section class="menuTop row mt-0 mt-md-4 pt-3">
+                    <figure class="d-flex justify-content-center align-items-center h-100 col-6 col-lg-3">
+                        <img src="img/logo.png" alt="">
+                    </figure>
+                    <nav class="menuDesk d-none d-lg-flex col-lg-9 ">
+                        <ul
+                            class="d-flex justify-content-end align-items-center ms-1 ms-lg-4 ps-1 ps-lg-4 list-unstyled">
+                            <li class="mx-4"><a class="px-3 py-2 rounded-pill" href="">home</a></li>
+                            <li class="mx-4"><a class="px-3 py-2 " href="">explore</a></li>
+                            <li class="mx-4"><a class="px-3 py-2 " href="">social</a></li>
+                            <li class="mx-4"><a class="px-3 py-2 " href="">autor</a></li>
+                            <li class="mx-4"><a class="px-3 py-2 " href="">creation</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menuMob d-flex justify-content-end align-items-center d-lg-none col-6 pe-5 pb-0 pb-md-2 pb-lg-0">
+                        <span class="openM" onclick="_openMenu()">
+                            <i class="bi bi-list"></i>
+                        </span>
+                        <span class="closeM" onclick="_closeMenu()">
+                            <i class="bi bi-x-lg"></i>
+                        </span>
+                        <ul
+                            class="list-unstyled" id="navMobe">
+                            <li><a  class="home"href="">home</a></li>
+                            <li><a  class=""href="">explore</a></li>
+                            <li><a  class="" href="">social</a></li>
+                            <li><a  class=""href="">autor</a></li>
+                            <li><a  class="" href="">creation</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <!-- end menu white -->
+                <!-- start content header -->
+                <section
+                    class="d-flex flex-wrap nft col-12 px-3 px-lg-2 justify-content-center justify-content-md-around align-items-center">
+                    <!-- start leftPart header -->
+                    <section class="col-12 col-sm-10 col-md-8 col-lg-6 text-white">
+                        <h4 class="py-3">Liberty NFT Market</h4>
+                        <h1 class="py-4 fw-bolder">CREATE, SELL & COLLECT TOP NFT’S.</h1>
+                        <p class="py-4">Liberty NFT Market is a really cool and professional design for your NFT
+                            websites. This HTML CSS template is based on Bootstrap v5 and it is designed for NFT related
+                            web portals. Liberty can be freely downloaded from TemplateMo's free css templates.</p>
+                        <a class="py-3 px-4 rounded-pill " href="">explore top NTFs</a>
+                        <a class="py-3 px-4 rounded-pill ms-2 " href="">watch our videos</a>
+                    </section>
+                    <!-- end leftPart header -->
+                    <!-- start rightPart header - slider -->
+                    <section class="col-12 col-sm-10 col-md-4 col-lg-5 mt-5 mt-lg-0 ">
+                        <div id="carouselExampleControls" class="carousel slide slider" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/banner-01.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/banner-02.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- end rightPart header - slider -->
+                </section>
+                <!-- end content header -->
+            </section>
+        </header>
+        <!-- end header -->
+        <!-- start background black -->
+        <section class="category container-fluid px-0 px-md-5 d-flex justify-content-center">
+            <section class="container-fluid container-xxl">
+            <!-- start row one bachground black -->
+                <section class=" d-flex justify-content-center flex-wrap">
+                    <!-- start title of boxs -->
+                    <div class="row justify-content-center align-items-center col-12">
+                        <h3 class="text-white text-center">Browse Through Our <span>Categories</span> Here.</h3>
+                    </div>
+                    <!-- end title of boxs -->
+                    <!-- start boxs -->
+                    <div class="box row px-2 d-flex justify-content-evenly col-12">
+                    <div class=" col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-01.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Blockchain</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    <div class=" col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-02.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Digital Art</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    <div class=" col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-03.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Music Art</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    <div class=" col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-04.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Virtual World</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-05.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Valuable</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    <div class=" col-12 col-sm-5 my-4 my-lg-0 mx-sm-1">
+                        <div class="icon bg-white d-flex justify-content-center align-items-center">
+                            <img class="w-50 h-50" src="img/icon-06.png" alt="">
+                        </div>
+                        <h4 class="text-white text-center fs-5">Triple NFT</h4>
+                        <span class="d-flex justify-content-center align-items-center">
+                            <i class="material-icons fs-2">chevron_right</i>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- end boxs -->
+                </section>
+                <!-- end row one bachground black -->
+                <!-- start row two bachground black -->
+                <section class="d-flex justify-content-center align-items-center flex-wrap">
+                <!-- start title of boxs -->
+                <div class="row">
+                    <h3 class="text-white text-center">Explore Some Hot <span> Collections</span> In Market.</h3>
+                </div>
+                <!-- end title of boxs -->
+                <!-- start article boxs -->
+                <div
+                    class="article col-12 d-flex justify-content-center align-items-center flex-wrap px-5 px-md-4 px-lg-0">
+                    <div class='row d-flex col-12 col-sm-10 col-md-8 col-lg-3 mx-md-1 mx-lg-3 my-3 my-sm-5 '>
+                        <figure class="">
+                            <img class="h-50" src="img/collection-01.jpg" alt="">
+                            <figcaption class="h-50 px-3 py-2">
+                                <h4 class="text-white">Bored Ape Kennel Club</h4>
+                                <div class="row mt-4">
+                                    <span class="text-center text-white col-6">items in collection:</span>
+                                    <span class="text-center text-white col-6 ">category:</span>
+                                    <span class="text-center text-white col-6 ">324/324</span>
+                                    <span class="text-center text-white col-6 ">visual art</span>
+                                </div>
+                            </figcaption>
+                            <a class="" href="">explore</a>
+                        </figure>
+                    </div>
+                    <div class='row d-flex col-12 col-sm-10 col-md-8 col-lg-3 mx-md-1 mx-lg-3 my-3 my-sm-5'>
+                        <figure class=" ">
+                            <img class="h-50" src="img/collection-01.jpg" alt="">
+                            <figcaption class="h-50 px-3 py-2">
+                                <h4 class="text-white">Worldwide Artwork Ground</h4>
+                                <div class="row mt-4">
+                                    <span class="text-center text-white col-6">items in collection:</span>
+                                    <span class="text-center text-white col-6 ">category:</span>
+                                    <span class="text-center text-white col-6 ">380/394</span>
+                                    <span class="text-center text-white col-6 ">music art</span>
+                                </div>
+                            </figcaption>
+                            <a class="" href="">explore</a>
+                        </figure>
+                    </div>
+                    <div class='row d-flex col-12 col-sm-10 col-md-8 col-lg-3 mx-md-1 mx-lg-3 my-3 my-sm-5 '>
+                        <figure class=" ">
+                            <img class="h-50" src="img/collection-01.jpg" alt="">
+                            <figcaption class="h-50 px-3 py-2">
+                                <h4 class="text-white">Genesis Collective Statue</h4>
+                                <div class="row mt-4">
+                                    <span class="text-center text-white col-6">items in collection:</span>
+                                    <span class="text-center text-white col-6 ">category:</span>
+                                    <span class="text-center text-white col-6 ">471/482</span>
+                                    <span class="text-center text-white col-6 ">blockchain</span>
+                                </div>
+                            </figcaption>
+                            <a class="" href="">explore</a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- end article boxs -->
+                </section>
+                <!-- end row two bachground black -->
+            </section>
+        </section>
+        <!-- end background black -->
+        <!-- start background market -->
+        <section class="market container-fluid px-0 px-md-5 d-flex justify-content-center">
+            <section class="container-fluid container-xxl h-100">
+                <!-- start title of market -->
+                <div class="row col-12 h-25 ">
+                    <h2 class="col-12 col-lg-6 mt-5 text-white">Create Your NFT & Put It On The Market.</h2>
+                    <div
+                        class="col-12 col-lg-6 mt-5 d-flex justify-content-center justify-content-lg-end align-items-center">
+                        <a class=" px-4 py-3" href="">create to NFT now</a>
+                    </div>
+                </div>
+                <!-- end title of market -->
+                <!-- start boxs of market -->
+                <div class="row col-12 h-75 d-flex justify-content-center align-items-center flex-wrap col-12">
+                    <figure class="col-12 col-lg-4">
+                        <div>
+                            <img src="img/icon-02.png" alt="">
+                        </div>
+                        <figcaption>
+                            <h3>set up your wallet</h3>
+                            <p>
+                                NFT means Non-Fungible Token that are used in digital cryptocurrency markets. There are
+                                many different kinds of NFTs in the industry.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-lg-4 ps-2">
+                        <div>
+                            <img src="img/icon-04.png" alt="">
+                        </div>
+                        <figcaption>
+                            <h3>add your digital NFT</h3>
+                            <p>
+                                There are 5 different HTML pages included in this NFT <span>website template</span> You
+                                can edit or modify any section on any page as you required.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-lg-4 ps-2">
+                        <div>
+                            <img src="img/icon-06.png" alt="">
+                        </div>
+                        <figcaption>
+                            <h3>sell your NFT & make profit</h3>
+                            <p>
+                                If you would like to support our TemplateMo website, please visit <span>our contact
+                                    page</span> to make a PayPal contribution. Thank you.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end boxs of market -->
+            </section>
+        </section>
+        <!-- end background market -->
+        <!-- start bachground dark items -->
+        <section class="items container-fluid px-0 px-md-5 d-flex justify-content-center ">
+            <section class="container-fluid container-xxl  flex-wrap h-100">
+                <!-- start tilte of items -->
+                <div class="row col-12">
+                    <h2  class="col-12 col-lg-5">
+                        <span>Items</span>
+                        Currently In The Market.
+                    </h2>
+                    <ul class="col-12 col-lg-7 d-flex justify-content-center align-items-center flex-wrap">
+                        <li>
+                            <a class="px-3 py-2" href="">all items</a>
+                        </li>
+                        <li>
+                            <a class="px-3 py-2" href="">music art</a>
+                        </li>
+                        <li>
+                            <a class="px-3 py-2" href="">digital  art</a>
+                        </li>
+                        <li>
+                            <a class="px-3 py-2" href="">blockchain</a>
+                        </li>
+                        <li>
+                            <a class="px-3 py-2" href="">visual</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end header items -->
+                <!-- start boxs of items -->
+                <div class="row col-12 mt-3 px-4 px-md-1 px-lg-0 justify-content-center align-content-start">
+                    <div class="mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5">
+                            <div class="row">
+                                <h3>Music Art Item</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class="row spanG">
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div>
+                    <div class="mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5 ">
+                            <div class="row">
+                                <h3>Digital Crypto Art</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class="row spanG">
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div>
+                    <div class="mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5">
+                            <div class="row">
+                                <h3>Digital Art Item</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class="row spanG">
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div>
+                    <div class=" mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5">
+                            <div class="row">
+                                <h3>Blockchain Music Des</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class="row spanG">
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div> 
+                    <div class=" mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5">
+                            <div class="row">
+                                <h3>Virtual Currency Art</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class="row spanG">
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div>
+                    <div class=" mx-md-2 my-2 row col-12 col-lg-5 justify-content-evenly align-items-center flex-wrap">
+                        <figure class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="img/brain.jpg" alt="">
+                        </figure>
+                        <figcaption class="col-5">
+                            <div class="row">
+                                <h3>Blockchain Item One</h3>
+                                <div>
+                                    <img src="img/author.jpg" alt="">
+                                </div>
+                                <span class="text-center">Liberty Artist</span>
+                                <a class="text-center" href="">@libertyart</a>
+                            </div>
+                            <div class='row spanG'>
+                                <span class="col-6">Current Bid</span>
+                                <span class="col-6">Ends In</span>
+                                <span class="col-6">2.03 ETH</span>
+                                <span class="col-6">4D 08H 15M</span>
+                                <span class="col-6">($8,240.50)</span>
+                                <span class="col-6">(July 24th, 2022)</span>
+                            </div>
+                            <a href="">veiw items details</a>
+                        </figcaption>
+                    </div>
+                </div>
+                <!-- start boxs of items -->
+            </section>
+        </section>
+        <!-- end bachground dark items -->
+        <!-- start footer -->
+        <section class="footer container-fluid px-0 px-md-5 d-flex justify-content-center ">
+            <section class="container-fluid container-xxl d-flex justify-content-evenly align-content-start flex-wrap ">
+                <!-- start footer one -->
+                <div class="row col-12 col-lg-3">
+                    <h3 class="col-12">Menu</h3>
+                    <ul class="col-12">
+                        <li><a href="">home</a></li>
+                        <li><a href="">explore</a></li>
+                        <li><a href="">blogs</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">expose to show</a></li>
+                    </ul>
+                </div>
+                <!-- start footer two -->
+                <div class="row col-12 col-lg-3">
+                    <h3 class="col-12">Activities</h3>
+                    <ul class="col-12">
+                        <li><a href="">digital art item</a></li>
+                        <li><a href="">music art</a></li>
+                        <li><a href="">blockchain</a></li>
+                        <li><a href="">design</a></li>
+                        <li><a href="">websites</a></li>
+
+                    </ul>
+                </div>
+                <!-- start icons -->
+                <div class="row col-12 col-lg-3">
+                    <h3 class="col-12 h-50 mb-5">Follow me
+                        <br>
+                        <span class="fs-6 ms-2">Alireza imanzadeh</span>
+                        <br>
+                        <span class="fs-6 ms-2">confirmationcode29@gmail.com</span> 
+                        <br>
+                        <span class="fs-6 ms-2">+989195230806</span>
+                    </h3>
+                    <div class="row col-12 h-50 justify-content-evenly align-items-center py-5 px-5">
+                        <span class="ins">
+                            <i class="bi bi-instagram"></i> 
+                        </span>
+                        <span class="lin">
+                            <i class="bi bi-linkedin"></i>  
+                        </span>
+                        <span class="git">
+                            <i class="bi bi-github"></i>
+                        </span>
+                        <span onclick="_close()" class="erase">
+                            <i class="bi bi-x-lg"></i>
+                        </span>
+                        <span onclick="popup()" id="share">
+                            <i class="bi bi-share-fill"></i>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- end footer -->
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="js/master.js"></script>
+</html>

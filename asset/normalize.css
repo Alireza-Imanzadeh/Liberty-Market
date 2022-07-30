@@ -1,0 +1,26 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+.container-fluid,
+.container,
+.row,
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+li{
+    list-style-type:none;
+}
